@@ -1,8 +1,8 @@
 from helga.plugins import match
 
 
-@match(r'\w* ?[:,] ?ping\W*$', priority=50)
-def ping(client, channel, nick, message, matches):
+@match(r'\w* ?[:,] ?ping\W*$', priority=101)
+def naked_ping(client, channel, nick, message, matches):
     """
     Annoy users on naked pings
     """
